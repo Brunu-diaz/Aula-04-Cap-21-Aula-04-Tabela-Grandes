@@ -12,133 +12,143 @@
         caption {
             font-size: 1.5rem;
             font-weight: bold;
-            padding: 10px;
             background-color: lightgray;
+            padding: 10px;
         }
         table {
-            width: 500px;
+            width: 950px;
             border-collapse: collapse ;
             /* Obrigatório para ter o título da tabela fixo */
             position: relative;
         }
-        .espaco{
-            width: 1000px;
-        }
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+        .esquerda {
+            text-align: left;
+        }
+        tfoot > tr {
+            background-color: gray;
+        }
+        thead > tr {
+            background-color: aliceblue;
+            text-align: left;
+        }
+        .num {
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <table>
         <caption>
-            <p>População dos Estados Brasileiros - 2024</p>
+            População dos Estados Brasileiros - 2024
         </caption>
         <thead>
             <tr>
-                <th class="espaco"scope="col">Estado</th>
+                <th scope="col">Estado</th>
                 <th scope="col">População</th>
                 <th scope="col">Comando HTML Utilizado</th>
             </tr>            
         </thead>
         <tbody>
             <tr>
-                <td class="espaco">Acre</td>
-                <td>830.018</td>
-                <td>'Negrito' e 'Destacado'</td>
+                <td class="espaco"><strong>Acre</strong></td>
+                <td class="num"><mark>830.018</mark></td>
+                <td>'<strong>Negrito</strong>' e '<mark>Destacado</mark>'</td>
             </tr>
             <tr>
-                <td class="espaco">Alagoas</td>
-                <td>3.365.351</td>
-                <td>'Itálico'</td>
+                <td class="espaco"><em>Alagoas</em></td>
+                <td class="num">3.365.351</td>
+                <td>'<em>Itálico</em>'</td>
             </tr>
             <tr>
-                <td class="espaco">Amapá</td>
-                <td>877.613</td>
-                <td>'Texto sublinhado'</td>
+                <td class="espaco"><u>Amapá</u></td>
+                <td class="num">877.613</td>
+                <td>'<u>Texto sublinhado</u>'</td>
             </tr>
             <tr>
-                <td class="espaco">Amazonas</td>
-                <td>4.269.995</td>
-                <td>'Texto riscado' e 'Texto sublinhado'</td>
+                <td class="espaco"><del>Amazonas</del></td>
+                <td class="num"><u>4.269.995</u></td>
+                <td>'<del>Texto riscado</del> e '<u>Texto sublinhado</u>'</td>
             </tr>
             <tr>
-                <td class="espaco">Bahia</td>
-                <td>14.141.626</td>
-                <td>'Texto sobrescrito'</td>
+                <td class="espaco"><sup>Bahia</sup></td>
+                <td class="num">14.141.626</td>
+                <td>'<sup>Texto sobrescrito</sup>'</td>
             </tr>
             <tr>
                 <td class="espaco">CE</td>
-                <td>9.240.580</td>
+                <td class="num">9.240.580</td>
                 <td>'Abreviação'</td>
             </tr>
             <tr>
-                <td class="espaco">Distrito Federal</td>
-                <td>3.098.883</td>
-                <td>'Texto em negrito'</td>
+                <td class="espaco"><strong>Distrito Federal</strong></td>
+                <td class="num">3.098.883</td>
+                <td>'<strong>Texto em negrito</strong>'</td>
             </tr>
             <tr>
                 <td class="espaco">"Espirito Santo"</td>
-                <td>4.108.508</td>
-                <td>'Citação curta'</td>
+                <td class="num">4.108.508</td>
+                <td>'"Citação curta"'</td>
             </tr>
             <tr>
-                <td class="espaco">Goiás</td>
-                <td>7.206.589</td>
-                <td>'Citação de fonte'</td>
+                <td class="espaco"><em>Goiás</em></td>
+                <td class="num">7.206.589</td>
+                <td>'<em>Citação de fonte</em>'</td>
             </tr>
             <tr>
                 <td class="espaco">Maranhão</td>
-                <td>6.775.805</td>
+                <td class="num">6.775.805</td>
                 <td>'Texto monoespaçado'</td>
             </tr>
             <tr>
                 <td class="espaco">Mato Grosso</td>
-                <td>3.658.813</td>
+                <td class="num">3.658.813</td>
                 <td>'Texto pré-formatado'</td>
             </tr>
             <tr>
                 <td class="espaco">Paraíba</td>
-                <td>4.059.905</td>
+                <td class="num">4.059.905</td>
                 <td>'Texto pequeno'</td>
             </tr>
             <tr>
                 <td class="espaco">Piauí</td>
-                <td>3.281.480</td>
+                <td class="num">3.281.480</td>
                 <td>'Texto subscrito'</td>
             </tr>
             <tr>
                 <td class="espaco">Rio de Janeiro</td>
-                <td>16.054.524</td>
+                <td class="num">16.054.524</td>
                 <td>'Citação em bloco'</td>
             </tr>
             <tr>
-                <td class="espaco">Rio Grande do Sul</td>
-                <td>10.882.965</td>
+                <td class="espaco"><strong>Rio Grande do Sul</strong></td>
+                <td class="num">10.882.965</td>
                 <td>'Negrito'</td>
             </tr>
             <tr>
-                <td class="espaco">Rondônia</td>
-                <td>1.616.379</td>
-                <td>'Itálico'</td>
+                <td class="espaco"><em>Rondônia</em></td>
+                <td class="num">1.616.379</td>
+                <td>'<em>Itálico</em>'</td>
             </tr>
             <tr>
-                <td class="espaco">Roraima</td>
-                <td>636.707</td>
-                <td>'Texto destacado'</td>
+                <td class="espaco"><mark>Roraima</mark></td>
+                <td class="num">636.707</td>
+                <td>'<mark>Texto destacado</mark>'</td>
             </tr>
             <tr>
                 <td class="espaco">To</td>
-                <td>1.607.363</td>
+                <td class="num">1.607.363</td>
                 <td>'Abreviação'</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total da População Estimada:</th>
-                <td><strong>95.713.104</strong></td>
-                <td>Realizar a Soma das Colunas</td>
+                <th class="esquerda" scope="row">Total da População Estimada:</th>
+                <td class="num"><strong>95.713.104</strong></td>
+                <td class="esquerda">Realizar a Soma das Colunas</td>
             </tr>
         </tfoot>
     </table>
